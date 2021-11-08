@@ -1,0 +1,525 @@
+/*
+Avis de licence :
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>
+
+Avis de copyright :
+
+Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 2.0 France. (http://creativecommons.org/licenses/by-sa/2.0/fr/)
+*/
+
+body{
+  font-family:"Latoweb","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:18px;
+  line-height:20px;
+  color:#69696E;
+  font-weight:400;
+  padding:0;
+  margin:0;
+  /*margin-top: 10px;*/
+}
+.mtop{
+  margin-top: 25px;
+}
+
+div{
+  display : block;
+}
+
+.container{
+  max-width: 1500px;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 95%;//90% dans materialize, m
+  }
+}
+
+/* ==========================================================================
+   01. IMAGES
+========================================================================== */
+img {
+	width: 100%;
+}
+.img90 {
+	width: 90%;
+}
+.img80 {
+	width: 80%;
+}
+.img75 {
+	width: 75%;
+}
+.img70 {
+	width: 70%;
+}
+.img65 {
+	width: 65%;
+}
+.img60 {
+	width: 60%;
+}
+.img55 {
+	width: 55%;
+}
+.img50 {
+	width: 50%;
+}
+.img45 {
+	width: 45%;
+}
+.img40 {
+	width: 40%;
+}
+.img35 {
+	width: 35%;
+}
+.img25 {
+	width: 25%;
+}
+.img20 {
+	width: 20%;
+}
+.img15 {
+	width: 15%;
+}
+.img10 {
+	width: 10%;
+}
+
+.imgpad10{
+  padding: 1.5%;
+  width:16%;
+  /* height:85%; */
+}
+
+/*pour les logos des entreprises et logos partenaires. Attention ajouter un fond blanc...*/
+.imgPadBr{
+  padding: 2%;
+  border-radius: 2.25%;
+}
+
+/*pour les logos des soutiens dans le footer, les images des speakers*/
+.imgPad{
+  padding: 2.15%;
+}
+
+/*pour les logos des soutiens dans la page specifique*/
+.imgSupportCard{
+  padding-top: 2.15%;
+  padding-left: 2.15%;
+  width: 50%;
+}
+
+.imgEuroRegion{
+  margin-bottom: 1.75%;
+}
+.imgAggloLR{
+  margin-bottom: 7%;
+}
+
+/* ==========================================================================
+   02. TYPO
+========================================================================== */
+h1{
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 56px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 46px;
+    margin-top:15px;
+    margin-bottom :15px;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 1.1rem 0 1.1rem 0;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+}
+
+h5{
+    font-weight: 200;
+    font-size: 23px;
+    line-height: 26px;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+    margin: 0.25rem 0 0.25rem 0;
+}
+
+h6{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 23px;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+    margin: 0.25rem 0 0.25rem 0;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top:15px;
+    margin-bottom :15px;
+    /* word-break: break-word; */
+    overflow-wrap: break-word;
+}
+
+pre {
+    font-family:"Latoweb","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top:15px;
+    margin-bottom :15px;
+    word-break: break-word;
+    /* overflow-wrap: break-word; */
+}
+
+.indent{
+  text-indent: 25px;
+}
+
+p.icons{
+  font-size: 70%;
+}
+/* @media only screen and (min-width: 993px){
+  p.icons{
+    color: red;
+    font-size: 75%;
+  }
+} */
+/* @media only screen and (min-width: 601px) and (max-width: 992px){
+  p.icons{
+    color: green;
+    font-size:75%;
+  }
+} */
+@media only screen and (max-width: 600px){
+  p.icons{
+    /* font-size: 55%; */
+    font-size: 49%;
+  }
+}
+
+/*couleurs de texte*/
+.text-white {
+    color: #ffffff;
+}
+.text-black {
+    color: #69696E;
+}
+.text-purple {
+    color: #662282;
+}
+.text-rose {
+    color: #e40f74;
+}
+.text-deep-rose {
+    color: #9E1457;//#9E1355
+}
+/* ==========================================================================
+   03. FORME
+========================================================================== */
+/*couleur fond*/
+.rose {
+  background-color: #e40f74;
+}
+.purple {
+  background-color: #662282;
+}
+.grey{
+  background-color: grey;
+}
+
+/*taille des marges*/
+.mb0{
+  margin-bottom: 0px;
+}
+.mt0{
+  margin-top: 0px;
+}
+.mb5{
+  margin-bottom: 1%;
+}
+.mt5{
+  margin-top: 1%;
+}
+.mb10{
+  margin-bottom: 2%;
+}
+.mt10{
+  margin-top: 2%;
+}
+.ml10{
+  margin-left: 2%;
+}
+.mr10{
+  margin-right: 2%;
+}
+.mb20{
+  margin-bottom: 4%;
+}
+.mt20{
+  margin-top: 4%;
+}
+.ml20{
+  margin-left: 4%;
+}
+.mr20{
+  margin-right: 4%;
+}
+.mb40{
+  margin-bottom: 8%;
+}
+.mt40{
+  margin-top: 8%;
+}
+.mt25p{
+  margin-top: 25%;
+}
+
+/* ==========================================================================
+   04. HEADER
+========================================================================== */
+.linear-gradient {
+  background: linear-gradient(to right, #e40f74, #662282 );
+}
+
+.linear-gradient-eco {
+  background: linear-gradient(to right, #487b3aff, #86b140ff );
+}
+/* ==========================================================================
+   05. NAVIGATION
+========================================================================== */
+/* nav{
+  background-color: #9E1457;
+} */
+nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating{
+  margin-top: 7px;
+}
+
+a{
+  color: #69696E ;
+}
+a:hover{
+  color: #e40f74 ;
+}
+
+/*pour le logo de la navbar*/
+.pad10{
+  padding: 10px;
+}
+
+/*Pour les titres navbar*/
+.tabs .tab a {
+  font-size: 18px;
+}
+@media only screen and (max-width: 601px){
+  .tabs .tab {
+    /* text-transform: lowercase; */
+  }
+}
+@media only screen and (max-width: 601px){
+  .tabs .tab a {
+    font-size: 13px;
+    padding: 0 8px
+  }
+}
+
+/*Menu burger
+ligne 3424 materialize.cs
+font-size: 50px;
+*/
+.sidenav {
+  height: 60%;
+  /* opacity: 0.9;
+  background-image: url("assets/icons/icon-64.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed; */
+}
+
+.sidenav li > a {
+  font-size: 14px;
+}
+
+/* .en{
+  display:;
+}
+.fr{
+  display:none;
+} */
+/* ==========================================================================
+   06. FOOTER
+========================================================================== */
+/* footer{
+  background-color: #e40f74 ;
+} */
+.page-footer{
+  background-color: #eeeeee;
+}
+.footer-copyright{
+    background-color: #e40f74 ;
+}
+/* ==========================================================================
+   07. BOUTONS
+========================================================================== */
+/* .btn{
+  background-color: #9E1457;
+} */
+.btn{
+  background-color: #662282;
+}
+.btn:hover{
+  background-color: #e40f74;
+  color:#eeeeee;
+}
+.btn.btnInv{
+  background-color: #e40f74;
+}
+.btn.btnInv:hover{
+  background-color: #662282;
+  color:#eeeeee;
+}
+
+/* ==========================================================================
+   08. CARROUSELS ET EFFETS
+========================================================================== */
+/*carrousel*/
+.carousel{
+  height: 250px ;
+}
+
+/*taost*/
+.toast{
+  background: linear-gradient(to right, #e40f74, #662282 );
+}
+#toastImg {
+  background-color: white;
+  width: 25%;
+}
+#toastA {
+  color:white;
+  padding-right: 10%;
+}
+#toast-container{
+  right: 0%;
+  bottom: 0%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+  #toast-container {
+    left:0%;
+  }
+}
+
+/* ==========================================================================
+   09. CARDS
+========================================================================== */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #e40f74;
+    text-transform: none;
+}
+
+.card-image-logo {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  width:50%;
+}
+
+.card-stand {
+  background-color: #e40f74;
+  color: #ffffff;
+  /* position: absolute; */
+  padding: 0.5%;
+  border-radius: 0% 40% 0 0;
+}
+
+@media only screen and (min-width: 993px){
+  .card .card-title.tf{
+    font-size: 17px;
+  }
+  .card .card-reveal.tf{
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px){
+  .card .card-title.tf{
+    font-size: 14px;
+  }
+  .card .card-reveal.tf{
+    font-size: 14px;
+    padding: 15px;
+  }
+  p.tf{
+    text-align: left;
+  }
+}
+
+.card .card-content{
+  padding: 1.5%;
+}
+@media only screen and (min-width: 993px){
+  .card .card-content.soutien{
+    padding: 3%;
+    min-height: 248px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+  .card .card-content.soutien{
+    padding: 3%;
+    min-height: 325px;
+  }
+}
+@media only screen and (min-width: 993px){/*768px*/
+  .card .card-content.partenaire{
+    padding: 3%;
+    min-height: 190px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+  .card .card-content.partenaire{
+    padding: 3%;
+    min-height: 120px;
+  }
+}
+/* @media only screen and (min-width: 601px) and (max-width: 992px){
+  .card .card-content.partenaire{
+    padding: 3%;
+    min-height: 325px;
+  }
+} */

@@ -1,0 +1,11 @@
+# Force www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Force HTTPS on whole site
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+Options All -Indexes
+
+ErrorDocument 404 /pagesEn/pageEn-404.php
